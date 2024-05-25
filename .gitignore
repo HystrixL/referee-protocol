@@ -1,0 +1,6 @@
+.xmake/
+.vscode/
+build/
+.clang-*
+*.out
+
