@@ -1,10 +1,10 @@
 #pragma once
 
+#include <referee_protocol/crc.h>
+#include <referee_protocol/data.h>
 #include <array>
 #include <cstring>
 #include <optional>
-#include "crc.hpp"
-#include "data.hpp"
 namespace rp {
 
 constexpr unsigned char FRAME_HEADER_SOF = 0xA5;

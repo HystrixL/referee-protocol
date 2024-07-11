@@ -1,6 +1,10 @@
-cmake_minimum_required(VERSION 3.5)
-project(referee_protocol LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
 
-add_library(${PROJECT_NAME} OBJECT ./referee_protocol.hpp)
+file(GLOB_RECURSE srcs CONFIGURE_DEPENDES src/*.cpp)
+add_library(referee_protocol OBJECT ${srcs})
+target_include_directories(referee_protocol PUBLIC include toml11)
 
-target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})
+
+if (referee_protocol_BUILD_EXAMPLE)
+    add_subdirectory(example)
+endif ()

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "id.hpp"
+#include <referee_protocol/id.h>
 
 namespace rp {
 template <unsigned short TCMD_ID>

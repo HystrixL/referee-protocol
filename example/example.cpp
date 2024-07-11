@@ -1,8 +1,6 @@
 
+#include <referee_protocol/referee_protocol.h>
 #include <iostream>
-#include "data.hpp"
-#include "frame.hpp"
-#include "referee_protocol.hpp"
 
 int main() {
     rp::GameResult result1{.winner = rp::GameResult::Winner::Blue};
